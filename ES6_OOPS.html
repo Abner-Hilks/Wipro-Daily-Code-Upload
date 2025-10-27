@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP Example using ES6 Classes</title>
+</head>
+<body>
+
+  <h2>Check Console and Alert Popups</h2>
+
+  <script>
+    // ES6 Class Example - Object Oriented Programming
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      // Method inside class
+      greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+      }
+    }
+
+    // Create first object: Alice
+    const alice = new Person("Alice", 25);
+    alice.greet(); // Console output
+    alert(`Person Details:\nName: ${alice.name}\nAge: ${alice.age}`);
+
+    // Create second object: Bob
+    const bob = new Person("Bob", 30);
+    bob.greet(); // Console output
+    alert(`Person Details:\nName: ${bob.name}\nAge: ${bob.age}`);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f7f9fb;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #031c2f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #810ec8;
+    }
+    #output {
+      margin-top: 20px;
+    }
+    p {
+      line-height: 1.5;
+    }
+    b {
+      color: #3d5063;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Management System (ES6 Features)</h2>
+  <button onclick="runDemo()">Run Assignment Demo</button>
+
+  <div id="output"></div>
+
+  <script>
+    function runDemo() {
+      const out = document.getElementById("output");
+      out.innerHTML = ""; // clear old data
+
+      // let and const
+      const institute = "ABC Institute";
+      let course = "Web Development";
+      out.innerHTML += `<p><b>Institute:</b> ${institute}</p>`;
+      out.innerHTML += `<p><b>Course:</b> ${course}</p>`;
+
+      // Spread Operator
+      const coreSubjects = ["HTML", "CSS", "JS"];
+      const advancedSubjects = ["React", "Node"];
+      const allSubjects = [...coreSubjects, ...advancedSubjects];
+      out.innerHTML += `<p><b>All Subjects:</b> ${allSubjects.join(", ")}</p>`;
+
+      // Arrow Function
+      const greet = name => `Welcome, ${name}!`;
+      out.innerHTML += `<p>${greet("Arpit")}</p>`;
+
+      // Class
+      class Student {
+        constructor(name, age, skills) {
+          this.name = name;
+          this.age = age;
+          this.skills = skills;
+        }
+        display() {
+          return `${this.name}, Age: ${this.age}, Skills: ${this.skills.join(", ")}`;
+        }
+      }
+
+      const s1 = new Student("Arpit", 22, ["JS", "HTML"]);
+      const s2 = new Student("Sarthak", 22, ["Python", "C++"]);
+      out.innerHTML += `<p><b>Students:</b><br>${s1.display()}<br>${s2.display()}</p>`;
+
+      // Map
+      const grades = new Map([
+        ["Arpit", "A"],
+        ["Sarthak", "A"]
+      ]);
+      out.innerHTML += `<p><b>Grades:</b><br>`;
+      grades.forEach((v, k) => out.innerHTML += `${k}: ${v}<br>`);
+      out.innerHTML += `</p>`;
+
+      // Set
+      const skills = new Set(["JS", "HTML", "CSS", "JS"]);
+      out.innerHTML += `<p><b>Unique Skills:</b> ${[...skills].join(", ")}</p>`;
+    }
+  </script>
+</body>
+</html>
