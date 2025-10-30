@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Activities | Spring Flowers School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="School Image.jpg" alt="School Logo" class="logo">
+    <h1>Monthly Activities</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="profile.html">Home</a></li>
+        <li><a href="monthly.html">Monthly Activities</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Select Subject</h2>
+
+    <div class="input-group">
+        <label for="subjectDropdown">Subject:</label>
+        <select id="subjectDropdown" onchange="showActivities()">
+            <option value="">--Select Subject--</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+        </select>
+    </div>
+
+    <ul id="activityList"></ul>
+</main>
+
+<footer>
+    <p>&copy; 2025 Spring Flowers School</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
