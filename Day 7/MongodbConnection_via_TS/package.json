@@ -1,0 +1,22 @@
+{
+  "name": "mongodbconnection_via_ts",
+  "version": "1.0.0",
+  "description": "A sample TypeScript coonection with MongoDB Atlas",
+  "main": "DB_Connectivity.js",
+  "scripts": {
+    "dev": "ts-node DB_Connectivity.ts",
+    "build": "tsc DB_Connectivity.ts",
+    "start": "node DB_Connectivity.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript", "mongodb", "atlas", "nodejs"],
+  "author": "Arpit Mahalle",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2"
+  }
+}
