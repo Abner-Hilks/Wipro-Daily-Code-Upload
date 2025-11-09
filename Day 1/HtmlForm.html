@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms Example</title>
+</head>
+<body>
+    <h1>HTML Forms Example</h1>
+
+    <form id="myForm">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Form Data Submitted:</h2>
+    <div id="result"></div>
+
+    <script>
+        const form = document.getElementById("myForm");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
+
+            const fname = document.getElementById("fname").value;
+            const lname = document.getElementById("lname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const gender = document.getElementById("gender").value;
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `
+                <p>First Name: ${fname}</p>
+                <p>Last Name: ${lname}</p>
+                <p>Email: ${email}</p>
+                <p>Password: ${password}</p>
+                <p>Gender: ${gender}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | Spring Flowers School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="School Image.jpg" alt="School Logo" class="logo">
+    <h1>Spring Flowers School</h1>
+</header>
+
+<main>
+    <div class="login-container">
+        <h2>Student Login</h2>
+
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password">
+        </div>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <p>Don’t have an account? <a href="#" onclick="toggleRegister()">Register</a></p>
+
+        <div id="register-section" class="hidden">
+            <h3>Register</h3>
+
+            <div class="input-group">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" placeholder="Enter New Username">
+            </div>
+
+            <div class="input-group">
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" placeholder="Enter New Password">
+            </div>
+
+            <button type="button" onclick="register()">Register</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Spring Flowers School</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
