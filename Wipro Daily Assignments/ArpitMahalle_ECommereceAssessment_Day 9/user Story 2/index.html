@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing - Local JSON</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3">
+
+<h2 class="text-center mb-4">Product Listing (Local JSON)</h2>
+
+<!-- Filters -->
+<div class="row mb-4">
+
+  <!-- Category Filter -->
+  <div class="col-md-4">
+    <select id="categoryFilter" class="form-select">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="fashion">Fashion</option>
+      <option value="home">Home</option>
+    </select>
+  </div>
+
+  <!-- Price Filter -->
+  <div class="col-md-4">
+    <select id="priceFilter" class="form-select">
+      <option value="all">All Prices</option>
+      <option value="low">Under ₹2000</option>
+      <option value="high">Above ₹2000</option>
+    </select>
+  </div>
+
+</div>
+
+<!-- Loading Text -->
+<p id="loading" class="fw-bold">Loading products...</p>
+
+<!-- Product List -->
+<div id="productList" class="row"></div>
+
+<!-- Script File -->
+<script src="script.js"></script>
+
+</body>
+</html>

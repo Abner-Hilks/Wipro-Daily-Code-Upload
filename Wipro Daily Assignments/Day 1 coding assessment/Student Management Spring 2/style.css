@@ -1,0 +1,80 @@
+/* ===== LOGO ===== */
+.logo {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(188, 135, 135, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(17, 8, 8, 0.5);
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #2b1b65, #4c359c);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Header text shadow */
+header h1 {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* ===== BUTTON NAVIGATION ===== */
+.button-nav a.btn {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button-nav a.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== TABLE STYLING ===== */
+table th {
+    background-color: #47d04c;
+    color: rgb(242, 238, 238);
+}
+
+table tr:hover {
+    background-color: #d4f0d4;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(135deg, #3cb240, #237926);
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 6px rgba(12, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .logo {
+        width: 50px;
+    }
+    main {
+        padding: 15px;
+    }
+    .button-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

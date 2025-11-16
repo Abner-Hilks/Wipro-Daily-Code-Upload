@@ -1,0 +1,28 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(135deg, #0f2b49, #7251a7);
+  color: rgb(181, 170, 170);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.event-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #4c5965;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}

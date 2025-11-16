@@ -1,0 +1,7 @@
+{
+  "events": [
+    { "id": 1, "title": "Cultural Fest", "category": "music", "date": "2025-11-15", "description": "A celebration of art and culture." },
+    { "id": 2, "title": "Tech Summit", "category": "tech", "date": "2025-12-05", "description": "Explore the latest innovations in technology." },
+    { "id": 3, "title": "Food Festival", "category": "food", "date": "2025-11-25", "description": "Taste dishes from around the world." }
+  ]
+}

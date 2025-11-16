@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog & Todo Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Blogging & Todo Platform</h1>
+    <p>Using Fetch API + Async/Await + JS Module Pattern</p>
+  </header>
+
+  <div class="container">
+    <div class="section" id="postsSection">
+      <h2>📚 Blog Posts</h2>
+      <button id="fetchPostsBtn">Fetch Posts</button>
+      <div id="postsContainer"></div>
+      <p id="postError" class="error"></p>
+    </div>
+
+    <div class="section" id="todosSection">
+      <h2>✅ Todo List</h2>
+      <button id="fetchTodosBtn">Fetch Todos</button>
+      <div id="todosContainer"></div>
+      <p id="todoError" class="error"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

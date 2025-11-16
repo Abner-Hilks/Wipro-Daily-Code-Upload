@@ -1,0 +1,37 @@
+body {
+  background-color: #f8fafc;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.header h1 {
+  color: #3a4453;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-card {
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.alert-danger {
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 20px auto;
+}

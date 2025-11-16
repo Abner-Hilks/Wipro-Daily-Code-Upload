@@ -1,0 +1,224 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1eeee;
+}
+
+/* Header */
+header {
+    background-color: #161e20;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #423c54;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #a9a296;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: 60vh;
+    text-align: center;
+}
+
+/* Login/Register Container */
+.login-container {
+    background-color: rgb(249, 239, 239);
+    max-width: 400px;
+    width: 90%;
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px #3b0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    width: 90%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input & Dropdown */
+.input-group input,
+.input-group select {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #6a0505;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #94ca62;
+    color: rgb(248, 243, 243);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #863ec8;
+}
+
+/* Activity List */
+#activityList {
+    list-style: none;
+    padding-left: 0;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#activityList li {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #2c2424;
+    text-align: left;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+/* Welcome Message */
+#welcomeMessage {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #253032;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    #activityList li {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .input-group input,
+    .input-group select,
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .input-group input,
+    .input-group select,
+    button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    #activityList li {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

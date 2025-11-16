@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce | Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white text-center p-4">
+    <h1 class="fw-bold">ECommerce Shopping Store</h1>
+    <p>Your One Stop Online Store</p>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <a class="navbar-brand fw-bold" href="#">Categories</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Electronics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Fashion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home & Kitchen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main -->
+<main class="container my-5">
+
+    <!-- Featured Products Section -->
+    <section>
+        <h2 class="text-center mb-4">Featured Products</h2>
+
+        <!-- Bootstrap responsive grid -->
+        <div class="row g-4">
+
+            <!-- Product card -->
+            <div class="col-md-3 col-6">
+                <div class="card product-card">
+                    <img src="Smart Phone.jpg" class="card-img-top" alt="Smart Phone">
+                    <div class="card-body text-center">
+                        <h6>Mobile Phone</h6>
+                        <p class="text-success fw-bold">₹19999</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card product-card">
+                    <img src="kitchen Utensils.jpg" class="card-img-top" alt="Kitchen">
+                    <div class="card-body text-center">
+                        <h6>Kitchen Utensils</h6>
+                        <p class="text-success fw-bold">₹499</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card product-card">
+                    <img src="Running Shoes.jpeg" class="card-img-top" alt="Shoes">
+                    <div class="card-body text-center">
+                        <h6>Running Shoes</h6>
+                        <p class="text-success fw-bold">₹999</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card product-card">
+                    <img src="Android TV.jpg" class="card-img-top" alt="TV">
+                    <div class="card-body text-center">
+                        <h6>Android TV</h6>
+                        <p class="text-success fw-bold">₹49999</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter form -->
+    <section class="mt-5 newsletter-box">
+        <h4 class="text-center mb-3">Subscribe to our Newsletter</h4>
+
+        <form onsubmit="return validateEmail()">
+            <div class="input-group">
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+            <small id="error" class="text-danger"></small>
+        </form>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    © 2025 ECommerce Shopping Store
+</footer>
+
+<!-- JS Email Validation -->
+<script>
+function validateEmail() {
+    let email = document.getElementById("email").value;
+    let error = document.getElementById("error");
+
+    if (!email.includes("@") || !email.includes(".")) {
+        error.innerText = "Please enter a valid email address!";
+        return false;
+    }
+
+    alert("Thanks for subscribing!");
+    return true;
+}
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

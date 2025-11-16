@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mainHeading">Hello, DOM!</h1>
+    <p id="para" title="Original paragraph">This is a paragraph.</p>
+
+    <button onclick="changeText()">Change Text & Style</button>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+    <button onclick="updateAttribute()">Update Attribute</button>
+
+    <script>
+        // 1. Change text content and inline style
+        function changeText() {
+            const para = document.getElementById("para");
+            para.textContent = "Text has been updated!";
+            para.style.color = "blue";
+            para.style.fontSize = "18px";
+        }
+
+        // 2. Toggle a class
+        function toggleHighlight() {
+            const para = document.getElementById("para");
+            para.classList.toggle("highlight");
+        }
+
+        // 3. Working with attributes
+        function updateAttribute() {
+            const para = document.getElementById("para");
+
+            // Get current title attribute
+            alert("Current title: " + para.getAttribute("title"));
+
+            // Set a new attribute
+            para.setAttribute("title", "Updated paragraph title");
+
+            // Remove an attribute
+            // para.removeAttribute("title");
+        }
+    </script>
+</body>
+</html>

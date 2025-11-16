@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "price": 1000.00,
+    "category": "electronics",
+    "image": "Wireless Headphones.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Sports Shoes",
+    "price": 2000.00,
+    "category": "fashion",
+    "image": "Running Shoes.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Coffee Maker",
+    "price": 3000.00,
+    "category": "home",
+    "image": "Coffee Maker.jpg"
+  }
+]

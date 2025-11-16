@@ -1,0 +1,43 @@
+/* src/components/Modal.css */
+
+/* Overlay covers the whole screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* ensures it's above everything */
+  backdrop-filter: blur(2px);
+}
+
+/* Centered modal box */
+.modal-content {
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Make close button stand out */
+.modal-content .btn {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Optional animation polish */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

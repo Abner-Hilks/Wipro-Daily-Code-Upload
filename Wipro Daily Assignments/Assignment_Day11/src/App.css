@@ -1,0 +1,20 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+h1 {
+  color: #1227a3;
+}
+
+.btn-primary {
+  border-radius: 8px;
+}

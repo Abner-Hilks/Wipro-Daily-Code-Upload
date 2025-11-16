@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Monk Who Sold His Ferrari",
+      "author": "Robin Sharma",
+      "price": 299,
+      "description": "A motivational tale about fulfilling your dreams and finding happiness.",
+      "image": "/images/The monk.jpeg"
+
+    },
+    {
+      "id": 2,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 350,
+      "description": "A philosophical novel about pursuing one’s destiny and inner purpose.",
+      "image": "/images/The Alchemist.jpeg"
+
+    },
+    {
+      "id": 3,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": 450,
+      "description": "A personal finance classic explaining how to make money work for you.",
+      "image": "/images/Rich dad poor dad.jpg"
+
+    },
+    {
+      "id": 4,
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "price": 250,
+      "description": "A self-help book emphasizing success through positive thinking.",
+      "image": "/images/Think and grow rich.jpg"
+
+    },
+    {
+      "id": 5,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "price": 599,
+      "description": "A historical exploration of human evolution and civilization.",
+      "image": "/images/Sapiens.jpg"
+
+    }
+  ]
+}
