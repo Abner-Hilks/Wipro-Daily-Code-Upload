@@ -1,0 +1,213 @@
+{
+  "packages": [
+    {
+      "id": "1",
+      "title": "Majestic Kashmir Getaway",
+      "duration": "5 Days / 4 Nights",
+      "price": "₹14999",
+      "image": "https://images.travelandleisureasia.com/wp-content/uploads/sites/5/2024/01/15134609/kashmir-deepanshu-nayak.jpeg?tr=w-1200,q-60"
+    },
+    {
+      "id": "2",
+      "title": "Spiritual Sikkim Journey",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹14499",
+      "image": "https://www.nomllers.com/wp-content/uploads/2017/06/abhishek-singh-xJDJ4PxkHvU-unsplash-scaled.webp"
+    },
+    {
+      "id": "3",
+      "title": "Taj Mahal & Heritage Tour",
+      "duration": "4 Days / 3 Nights",
+      "price": "₹9999",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "id": "4",
+      "title": "Goa Beach Paradise",
+      "duration": "5 Days / 4 Nights",
+      "price": "₹12999",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=60"
+    },
+    {
+      "id": "5",
+      "title": "Royal Rajasthan Desert Safari",
+      "duration": "6 Days / 5 Nights",
+      "price": "₹15999",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=60"
+    },
+    {
+      "id": "6",
+      "title": "Kerala Backwaters Escape",
+      "duration": "4 Days / 3 Nights",
+      "price": "₹13999",
+      "image": "https://images.unsplash.com/photo-1505635552518-3448ff116af3?auto=format&fit=crop&w=1000&q=60"
+    },
+    {
+      "id": "7",
+      "title": "Leh Ladakh Himalayan Adventure",
+      "duration": "7 Days / 6 Nights",
+      "price": "₹19999",
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=60"
+    },
+    {
+      "id": "8",
+      "title": "Andaman Island Ocean Retreat",
+      "duration": "5 Days / 4 Nights",
+      "price": "₹18999",
+      "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=60"
+    },
+    {
+      "id": "9",
+      "title": "Manali Snow Adventure Trip",
+      "duration": "5 Days / 4 Nights",
+      "price": "₹11999",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=60"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "c070",
+      "fullName": "A",
+      "email": "d@1",
+      "phone": "12345",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "ca74",
+      "fullName": "A",
+      "email": "a@3",
+      "phone": "12345",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "504e",
+      "fullName": "A",
+      "email": "C@1",
+      "phone": "1234567890",
+      "travelers": "4",
+      "package": "Spiritual Sikkim Journey"
+    },
+    {
+      "id": "3f19",
+      "fullName": "A",
+      "email": "d@1",
+      "phone": "12345789",
+      "travelers": 1,
+      "package": "Spiritual Sikkim Journey"
+    },
+    {
+      "id": "1357",
+      "fullName": "A",
+      "email": "C@1",
+      "phone": "12345",
+      "travelers": 1,
+      "package": "Taj Mahal & Heritage Tour"
+    },
+    {
+      "id": "23a0",
+      "fullName": "A",
+      "email": "d@1",
+      "phone": "12345789",
+      "travelers": "2",
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "5857",
+      "fullName": "A",
+      "email": "d@1",
+      "phone": "12345",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "d3a9",
+      "fullName": "Arp",
+      "email": "arp@123",
+      "phone": "09235863",
+      "travelers": "3",
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "d4bc",
+      "fullName": "Arp",
+      "email": "C@1",
+      "phone": "12345789",
+      "travelers": "4",
+      "package": "Spiritual Sikkim Journey"
+    },
+    {
+      "id": "d488",
+      "fullName": "A",
+      "email": "a@3",
+      "phone": "12345",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "860f",
+      "fullName": "A",
+      "email": "d@1",
+      "phone": "12345",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "aa66",
+      "fullName": "Arp",
+      "email": "a@3",
+      "phone": "12345789",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "5ddb",
+      "fullName": "A",
+      "email": "a@3",
+      "phone": "12345789",
+      "travelers": 1,
+      "package": "Majestic Kashmir Getaway"
+    },
+    {
+      "id": "2a09",
+      "fullName": "asf",
+      "email": "etg@3",
+      "phone": "1234567890",
+      "travelers": 1,
+      "package": "Manali Snow Adventure Trip"
+    },
+    {
+      "id": "817c",
+      "fullName": "abcd",
+      "email": "sdcsd@fg",
+      "phone": "1234567890",
+      "travelers": 1,
+      "package": "Andaman Island Ocean Retreat"
+    },
+    {
+      "id": "7daa",
+      "fullName": "abcd",
+      "email": "etg@3",
+      "phone": "1234567890",
+      "travelers": "5",
+      "package": "Taj Mahal & Heritage Tour"
+    },
+    {
+      "id": "e281",
+      "fullName": "asf",
+      "email": "etg@3",
+      "phone": "1234567890",
+      "travelers": 1,
+      "package": "Taj Mahal & Heritage Tour"
+    },
+    {
+      "id": "fc40",
+      "fullName": "abcd",
+      "email": "etg@3",
+      "phone": "1234567890",
+      "travelers": "4",
+      "package": "Royal Rajasthan Desert Safari"
+    }
+  ]
+}
