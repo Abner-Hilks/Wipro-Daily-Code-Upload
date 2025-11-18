@@ -1,0 +1,29 @@
+[
+  {
+    "id": 2,
+    "name": "Arpit",
+    "skills": [
+      "Node",
+      "Express"
+    ],
+    "course": "MERN"
+  },
+  {
+    "id": 3,
+    "name": "Anish",
+    "skills": [
+      "Node",
+      "React"
+    ],
+    "course": "MERN"
+  },
+  {
+    "id": 1,
+    "name": "Sarthak",
+    "skills": [
+      "Node",
+      "Express"
+    ],
+    "course": "MERN"
+  }
+]
