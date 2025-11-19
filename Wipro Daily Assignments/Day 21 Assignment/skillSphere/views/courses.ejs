@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses</title>
+</head>
+<body>
+  <h1>Course List</h1>
+
+  <ul>
+    <% courses.forEach(course => { %>
+      <li><strong><%= course.name %></strong> - <%= course.duration %></li>
+    <% }) %>
+  </ul>
+
+</body>
+</html>
