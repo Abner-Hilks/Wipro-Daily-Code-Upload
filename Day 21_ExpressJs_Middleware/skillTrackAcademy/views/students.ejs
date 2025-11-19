@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkillTrack Students</title>
+</head>
+<body>
+  <h1>Student List</h1>
+
+  <ul>
+    <% students.forEach(student => { %>
+      <li><%= student.name %> - <%= student.email %></li>
+    <% }) %>
+  </ul>
+
+  <h2>Add Student</h2>
+  <form action="/students" method="POST">
+    <input name="name" placeholder="Name" />
+    <input name="email" placeholder="Email" />
+    <button type="submit">Add</button>
+  </form>
+</body>
+</html>
