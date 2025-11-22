@@ -1,0 +1,63 @@
+<!-- public/chat.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Live Chat Demo</title>
+</head>
+<body>
+  <h2>Live Chat (Demo)</h2>
+  <label>Room: <input id="room" value="course-101" /></label>
+  <label>User: <input id="user" value="student1" /></label>
+  <button id="join">Join</button>
+  <button id="leave">Leave</button>
+  <div id="chat" style="border:1px solid #ccc; height:300px; overflow:auto; padding:8px;"></div>
+  <input id="msg" placeholder="Type message..." />
+  <button id="send">Send</button>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script>
+    const socket = io("/live");
+
+    const chatDiv = document.getElementById("chat");
+    const roomInput = document.getElementById("room");
+    const userInput = document.getElementById("user");
+    document.getElementById("join").onclick = () => {
+      socket.emit("join", { room: roomInput.value, user: userInput.value });
+      appendSystem("Joined " + roomInput.value);
+    };
+    document.getElementById("leave").onclick = () => {
+      socket.emit("leave", { room: roomInput.value, user: userInput.value });
+      appendSystem("Left " + roomInput.value);
+    };
+    document.getElementById("send").onclick = () => {
+      const message = document.getElementById("msg").value;
+      if (!message) return;
+      socket.emit("message", { room: roomInput.value, user: userInput.value, message });
+      document.getElementById("msg").value = "";
+    };
+
+    socket.on("message", (payload) => {
+      appendMessage(payload.user, payload.message);
+    });
+
+    socket.on("system", (payload) => {
+      appendSystem(payload.message);
+    });
+
+    function appendMessage(user, message) {
+      const el = document.createElement("div");
+      el.textContent = `${new Date().toLocaleTimeString()} ${user}: ${message}`;
+      chatDiv.appendChild(el);
+      chatDiv.scrollTop = chatDiv.scrollHeight;
+    }
+    function appendSystem(text) {
+      const el = document.createElement("div");
+      el.textContent = `${new Date().toLocaleTimeString()} [SYSTEM]: ${text}`;
+      el.style.fontStyle = "italic";
+      chatDiv.appendChild(el);
+      chatDiv.scrollTop = chatDiv.scrollHeight;
+    }
+  </script>
+</body>
+</html>
