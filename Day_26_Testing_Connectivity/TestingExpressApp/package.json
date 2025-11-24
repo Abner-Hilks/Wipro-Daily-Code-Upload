@@ -1,0 +1,18 @@
+{
+  "name": "testingexpressapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^6.2.1",
+    "express": "^5.1.0",
+    "mocha": "^11.7.5",
+    "supertest": "^7.1.4"
+  }
+}
